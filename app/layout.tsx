@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { inter } from "@/app/font";
 import "./globals.css";
+import { inter } from "@/app/font";
+import ThemeRegistry from "@/ThemeRegistry/ThemeRegistry";
 
 export const metadata: Metadata = {
   title: "",
@@ -14,7 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={inter.className}>{children}</body>
+      <ThemeRegistry>
+        <body className={inter.className}>{children}</body>
+      </ThemeRegistry>
     </html>
   );
 }
