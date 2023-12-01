@@ -29,6 +29,15 @@
 - tailwindcss@3.3.5
 - typescript@5.3.2
 
+## 必要に応じて以下のライブラリを追加でインストールしてください
+
+- react-icons
+- swr
+- react-use
+- uuid
+- usehooks-ts
+- axios
+
 ## 使用方法
 
 ### 1. クローンを作成
